@@ -1,0 +1,31 @@
+{
+	"id": "31f443d2-38aa-038a-ef4d-7dc6b38ddd0c",
+	"name": "GET{all}cliente",
+	"requests": [
+		{
+			"id": "5704af51-28dc-c914-ad4d-04515ae45725",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8182/studyWeb/rest/cliente/all",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "31f443d2-38aa-038a-ef4d-7dc6b38ddd0c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8182/studyWeb/rest/cliente/all",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1478303356997,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"codigo\": 11,\n  \"nome\": \"Pele\",\n  \"inscricaoFederal\": null\n}"
+		}
+	],
+	"order": [
+		"5704af51-28dc-c914-ad4d-04515ae45725"
+	],
+	"timestamp": 1478303356997
+}

@@ -1,0 +1,52 @@
+
+<div ng-show="acao == 'l'">
+	<p>Listagem dos Itens Pedido</p>
+	<p>
+		<input type="text" ng-model="nomeDoItemPedido">
+	</p>
+	<p><button ng-click="incluir()">Novo</button></p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>NUMERO DO PEDIDO</th>
+				<th>CODIGO PRODUTO</th>
+				<th>QUANTIDADE</th>	
+				<th>VALOR UNITARIO</th>
+				<th>VALOR TOTAL</th>
+
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in itensPedido | orderBy:'quantidade' | filter: nomeDoItemPedido">
+				<td>{{item.pedido.numeroPedido}}</td>
+				<td>{{item.produto.codigo}}</td>
+				<td>{{item.quantidade}}</td>
+				<td>{{item.valorUnitario}}</td>
+				<td>{{item.valorTotal}}</td>				
+				
+				<td><button ng-click="alterar(item)">A</button></td>
+				<td><button ng-click="excluir(item)">E</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div ng-show="acao != 'l'">
+	<p>Manutenção do Item Produto</p>
+
+	<label>Quantidade</label>
+	<p><input type="text" ng-model="itemPedido.quantidade"></p>
+	<label>Valor Unitario</label>
+	<p><input type="text" ng-model="itemPedido.valorUnitario"></p>
+	<label>ValorTotal</label>
+	<p><input type="text" ng-model="itemPedido.valorTotal"></p>
+	<label>Numero Pedido</label>
+	<p><input type="text" ng-model="itemPedido.pedido.numeroPedido"></p>
+	<label>Codigo Produto</label>
+	<p><input type="text" ng-model="itemPedido.produto.codigo" ></p>
+	<p><button ng-click="listar()">Cancelar</button></p>
+	<p><button ng-click="salvar()">{{textoAcao}}</button></p>
+</div>
+

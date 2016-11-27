@@ -1,0 +1,31 @@
+{
+	"id": "78dd8eb9-c200-adab-f653-5ccc9fab8fb8",
+	"name": "PUT{objeto}cliente",
+	"requests": [
+		{
+			"id": "43c148cd-e485-2382-22c8-478e0342845a",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8182/studyWeb/rest/cliente",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "78dd8eb9-c200-adab-f653-5ccc9fab8fb8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8182/studyWeb/rest/cliente",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1478303741879,
+			"version": 2,
+			"responses": [],
+			"tests": "dsadasdsaddas\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"codigo\": 7,\n  \"nome\": \"Jesus\",\n  \"inscricaoFederal\": \"Cristo\"\n}"
+		}
+	],
+	"order": [
+		"43c148cd-e485-2382-22c8-478e0342845a"
+	],
+	"timestamp": 1478303741879
+}

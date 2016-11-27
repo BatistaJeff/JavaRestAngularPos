@@ -1,0 +1,31 @@
+{
+	"id": "a0745ea3-1b69-b7d3-7c6f-d73932191177",
+	"name": "DELETE{objeto}cliente",
+	"requests": [
+		{
+			"id": "0995ef56-82c1-94cf-9b34-42ee4c5e6831",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8182/studyWeb/rest/cliente/",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "a0745ea3-1b69-b7d3-7c6f-d73932191177",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8182/studyWeb/rest/cliente/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1478304771238,
+			"version": 2,
+			"responses": [],
+			"tests": "dsadasdsaddas\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"codigo\": \"4\",\n  \"nome\": \"Pele11\",\n  \"inscricaoFederal\": \"Teste11\"\n}"
+		}
+	],
+	"order": [
+		"0995ef56-82c1-94cf-9b34-42ee4c5e6831"
+	],
+	"timestamp": 1478304771238
+}

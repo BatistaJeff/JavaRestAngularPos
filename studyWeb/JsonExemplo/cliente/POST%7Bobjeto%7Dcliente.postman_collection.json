@@ -1,0 +1,31 @@
+{
+	"id": "b469b04b-cf02-d774-146b-5fb37e03f310",
+	"name": "POST{objeto}cliente",
+	"requests": [
+		{
+			"id": "db450134-db19-d31e-8654-8fa528fb7231",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8182/studyWeb/rest/cliente",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "b469b04b-cf02-d774-146b-5fb37e03f310",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8182/studyWeb/rest/cliente",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1478303687482,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"codigo\": null,\n  \"nome\": \"Pele11\",\n  \"inscricaoFederal\": \"Teste11\"\n}"
+		}
+	],
+	"order": [
+		"db450134-db19-d31e-8654-8fa528fb7231"
+	],
+	"timestamp": 1478303687482
+}

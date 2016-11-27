@@ -1,0 +1,39 @@
+
+<div ng-show="acao == 'l'">
+	<p>Listagem de Pedidos</p>
+	<p>
+		<input type="text" ng-model="numeroPedido">
+	</p>
+	<p><button ng-click="incluir()">Novo</button></p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>NUMERO PEDIDO</th>	
+				<th>DATA PEDIDO</th>
+				<th>CODIGO CLIENTE</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in pedidos | orderBy:'numeroPedido' | filter: numeroPedido">
+				<td>{{item.numeroPedido}}</td>
+				<td>{{item.dataPedido}}</td>
+				<td>{{item.cliente.codigo}}</td>
+				<td><button ng-click="alterar(item)">A</button></td>
+				<td><button ng-click="excluir(item)">E</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div ng-show="acao != 'l'">
+	<p>Manutenção de Pedido</p>	
+	<label>Data Pedido</label>
+	<p><input type="data" ng-model="pedido.dataPedido"></p>
+	<label>Codigo Cliente</label>
+	<p><input type="text" ng-model="pedido.cliente.codigo"></p>
+	<p><button ng-click="listar()">Cancelar</button></p>
+	<p><button ng-click="salvar()">{{textoAcao}}</button></p>
+</div>
+

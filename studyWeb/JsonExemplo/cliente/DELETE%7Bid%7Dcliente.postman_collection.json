@@ -1,0 +1,30 @@
+{
+	"id": "09439524-d398-4231-e17b-b33894bd147f",
+	"name": "DELETE{id}cliente",
+	"requests": [
+		{
+			"id": "aab4043f-2a9b-ef54-f779-e577a766a6d9",
+			"headers": "",
+			"url": "http://localhost:8182/studyWeb/rest/cliente/8",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "09439524-d398-4231-e17b-b33894bd147f",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8182/studyWeb/rest/cliente/8",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1478304850103,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	],
+	"order": [
+		"aab4043f-2a9b-ef54-f779-e577a766a6d9"
+	],
+	"timestamp": 1478304850103
+}

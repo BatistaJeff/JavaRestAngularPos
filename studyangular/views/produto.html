@@ -1,0 +1,38 @@
+
+<div ng-show="acao == 'l'">
+	<p>Listagem dos Produtos</p>
+	<p>
+		<input type="text" ng-model="nomeDoProduto">
+	</p>
+	<p><button ng-click="incluir()">Novo</button></p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>CODIGO PRODUTO</th>	
+				<th>NOME PRODUTO</th>	
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in produtos | orderBy:'nome' | filter: nomeDoProduto">
+				<td>{{item.codigo}}</td>
+				<td>{{item.nome}}</td>
+				<td><button ng-click="alterar(item)">A</button></td>
+				<td><button ng-click="excluir(item)">E</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div ng-show="acao != 'l'">
+	<p>Manutenção do produto</p>
+	<label>Codigo do Produto</label>
+	<p><input type="text" ng-model="produto.codigo"></p>
+	<label>Nome do Produto</label>
+	<p><input type="text" ng-model="produto.nome"></p>
+	<p><button ng-click="listar()">Cancelar</button></p>
+	<p><button ng-click="salvar()">{{textoAcao}}</button></p>
+</div>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study AngularJS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="js/produtoController.js"></script>
+	<script src="js/clienteController.js"></script>
+	<script src="js/pedidoController.js"></script>
+	<script src="js/itemPedidoController.js"></script>	
+</head>
+<body ng-app="app">
+	<a href="#cliente">Clientes</a>
+	<a href="#produto">Produtos</a>
+	<a href="#pedido">Pedidos</a>
+	<a href="#itemPedido">Itens Pedido</a>
+
+	<div ng-view></div>
+</body>
+</html>
